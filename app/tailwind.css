@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  html,
+  body {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-[#1c1d1f] text-white antialiased;
+  }
+}
+
+/* Custom scrollbar for the course outline */
+.course-outline::-webkit-scrollbar {
+  width: 8px;
+}
+
+.course-outline::-webkit-scrollbar-track {
+  background: #1c1d1f;
+}
+
+.course-outline::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+.course-outline::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
